@@ -9,16 +9,14 @@ programa
 		inteiro numero = 233
 
 		faca {
-			se (numero >= 253 e numero <= 300){
-				numero = numero + 5
-			}
-
-			senao se (numero >= 300 e numero <= 400){
+			
+			se (numero >= 300 e numero <= 400){
 				numero = numero + 3
-			}
-			senao se (numero >= 400 e numero <= 456){
+				//numero++
+			} senao {
 				numero = numero + 5
 			}
+			
 			escreva ("\nNúmero: " + numero)
 		}
 
@@ -33,7 +31,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 429; 
+ * @POSICAO-CURSOR = 148; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
