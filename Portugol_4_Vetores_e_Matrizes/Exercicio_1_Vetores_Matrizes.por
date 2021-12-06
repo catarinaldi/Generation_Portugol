@@ -6,15 +6,25 @@ programa
 	 */
 	funcao inicio()
 	{
-		real notas[2]
-		real MinhaNota = 5.6
+		inteiro vetor[5], valor, i, maior = 0
+				
+		para (valor = 0; valor < 5; valor ++){
+			
+			escreva ("Escreva 5 valores:\n")
+			leia (vetor[valor])
+			
+			se (vetor[valor] >= maior){
+				maior = vetor[valor]
+			}
+			
+		}
+		limpa ()
+		
+		para (i = 0; i < 5; i++){
+			escreva (vetor[i] + "\n")
+		}
 
-		notas[0] = 7.5
-		notas[1] = MinhaNota
-
-		escreva ("Posição 0: " + notas[0])
-		escreva("\nPosição 1: " + notas[1])
-	
+		escreva ("\nMaior valor: " + maior)
 		
 	}
 }
@@ -24,7 +34,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 217; 
+ * @POSICAO-CURSOR = 410; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
