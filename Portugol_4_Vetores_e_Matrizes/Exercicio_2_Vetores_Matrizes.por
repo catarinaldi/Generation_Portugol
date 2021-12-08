@@ -14,16 +14,17 @@ programa
 			leia (vetor[valor])
 
 			
-			se (vetor[valor] >= maior){
+			se (vetor[valor] > maior){
 				maior = vetor[valor]
-				}
+				ocorrencias = 0
+			}
 			se (maior == vetor[valor]){
 				ocorrencias++
 			}
 
 			}
 			
-		limpa ()
+			limpa ()
 		
 		para (i = 0; i < 10; i++){
 			escreva (" | " + vetor[i] + " | ")
@@ -43,7 +44,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 571; 
+ * @POSICAO-CURSOR = 477; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

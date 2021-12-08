@@ -6,27 +6,34 @@ programa
 	 */
 	funcao inicio()
 	{
-		inteiro 
+		inteiro matriz [3][3], l = 0, c = 0, soma = 0, somaDiag = 0
 				
-		para 
-			
-			escreva (":\n")
-			leia ()
-			
-			se (){
-				
+		para (l = 0; l <= 2; l++){
+			para (c = 0; c <= 2; c++){
+				escreva ("Escreva o valor: ")
+				leia (matriz[l][c])
 			}
-			
 		}
+		
 		limpa ()
 		
-		para (){
+		para (l = 0; l <= 2; l++){
+			para (c = 0; c <= 2; c++){
+				escreva ("| " + matriz[l][c] + " | ")
+				soma += matriz[l][c]
+				
+				se (l == c){
+					somaDiag += matriz[l][c]
+				}
+			}
 			escreva ("\n")
 		}
 
-		escreva ("\n")
+			escreva ("A soma dos valores da matriz é igual a: " + soma)		
+			escreva ("\nA soma da diagonal da matriz é igual a: " + somaDiag)		
 		
 	}
+			
 }
 
 /* $$$ Portugol Studio $$$ 
@@ -34,9 +41,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 24; 
+ * @POSICAO-CURSOR = 505; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {matriz, 9, 10, 6};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
